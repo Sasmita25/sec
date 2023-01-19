@@ -12,6 +12,8 @@ jobs:
         url: http://52.90.108.253:8200
         token: token
         secrets: |
-          /kv/sas user ;
+          /kv/sas user | USER ;
     - name: Sensitive Operation
-      run: "echo --token '${{ steps.secrets.outputs.user }}'"
+      run: | 
+        "echo --token '${{ steps.secrets.outputs.USER }}'"
+         echo $USER
