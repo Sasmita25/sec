@@ -5,9 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run : echo "hai"
     - name: Import Secrets
-    - uses: hashicorp/vault-action@v1.0.1
+      uses: hashicorp/vault-action@v1.0.1
       id: secrets
       with:
         url: 'http://52.90.108.253:8200/ui/'    # Address of running Vault instance
