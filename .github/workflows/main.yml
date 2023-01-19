@@ -13,6 +13,5 @@ jobs:
         url: 'http://52.90.108.253:8200/ui/'    # Address of running Vault instance
         method: token
         token: token
-        tlsSkipVerify: true
         secrets: |
           secret/sas secrets;
