@@ -12,6 +12,6 @@ jobs:
         url: http://52.90.108.253:8200
         token: token
         secrets: |
-          /cubbyhole/foo foo ;
+          /kv/sas user ;
     - name: Sensitive Operation
-      run: "echo --token '${{ steps.secrets.outputs.foo }}'"
+      run: "echo --token '${{ steps.secrets.outputs.user }}'"
