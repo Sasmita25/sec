@@ -12,4 +12,4 @@ jobs:
         method: token
         token: token
         secrets: |
-          kv/sas user
+          kv/sas user | user;
