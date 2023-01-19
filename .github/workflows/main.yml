@@ -6,10 +6,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Import Secrets
-      uses: hashicorp/vault-action@v1.0.1
+      uses: hashicorp/vault-action@v2
       with:
-        url: http://52.90.108.253:8200/ui/
-        method: token
+        url: http://52.90.108.253:8200
         token: token
         secrets: |
           kv/sas user | user;
