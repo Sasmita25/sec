@@ -13,3 +13,4 @@ jobs:
         token: token
         secrets: |
           kv/sas user
+          run - echo "hai"
