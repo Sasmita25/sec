@@ -6,7 +6,7 @@ jobs:
     runs-on: [self-hosted, linux]
     steps:
     - uses: actions/checkout@v2
- - name: Import Secrets
+    - name: Import Secrets
       uses: hashicorp/vault-action@v1.0.1
       id: secrets
       with:
