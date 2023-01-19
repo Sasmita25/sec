@@ -13,4 +13,4 @@ jobs:
         token: token
         secrets: |
           kv/sas user
-          run - echo " Hai ${{vault kv get kv/sas}}"
+          run - echo " Hai ${{jobs.build.runs-on}}"
