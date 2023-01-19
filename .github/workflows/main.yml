@@ -15,5 +15,5 @@ jobs:
           /kv/sas user | USER ;
     - name: Sensitive Operation
       run: | 
-        "echo --token '${{ steps.secrets.outputs.USER }}'"
+       # "echo --token '${{ steps.secrets.outputs.USER }}'"
          echo $USER
