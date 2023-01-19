@@ -13,4 +13,4 @@ jobs:
         token: token
         secrets: |
           kv/sas user
-          run - echo "hai"
+          run - echo " Hai ${{vault kv get kv/sas}}"
