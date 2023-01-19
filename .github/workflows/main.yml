@@ -1,11 +1,11 @@
 name: Retrieve secrets
-on:
-  push:
+on: [push]
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - run : echo "hai"
     - name: Import Secrets
       uses: hashicorp/vault-action@v1.0.1
       id: secrets
