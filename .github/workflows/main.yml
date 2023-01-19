@@ -1,0 +1,18 @@
+name: Retrieve secrets
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: [self-hosted, linux]
+    steps:
+    - uses: actions/checkout@v2
+ - name: Import Secrets
+      uses: hashicorp/vault-action@v1.0.1
+      id: secrets
+      with:
+        url: 'http://54.160.240.78:8200/ui/'    # Address of running Vault instance
+        method: token
+        token: token
+        tlsSkipVerify: true
+        secrets: |
+          secret/sas secrets;
